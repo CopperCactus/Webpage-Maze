@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/fakeCSS.css" rel="stylesheet" />
+    <title>Aha! Oh wait...</title>
+</head>
+<body>
+    <p>What? Why are we here now? Where did we come from? This doesn't make any sense... ugh... just keep clicking
+        around... I guess that's just what you've been doing anyways...
+    </p>
+    <h1><pre>
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../<a href="fakeImages.html" class="fakeImages">images</a>/TicTacToeWin.png');
+            background-size: cover;
+            z-index: -1;
+        }
+        
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: <a href="question3.html" class="fakeImages">#f0f0f0</a>;
+        }
+        
+        h1, p {
+            position: relative;
+            z-index: 1;
+        }
+    </pre></h1>
+</body>
+</html>
