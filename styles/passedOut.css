@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  overflow: hidden;
+  color:#e0dcdc;
+  background-color: black;
+}
+
+.v57_18 {
+  width: 100%;
+  height: 1024px;
+  background: #e0dcdc;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.v57_22 {
+  width: 211px;
+  height: 192px;
+  background: #e0dcdc;
+  opacity: 1;
+  position: absolute;
+  top: 104px;
+  left: 110px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+
+.v57_19 {
+  width: 100%;
+  height: 100%;
+  background: rgba(217, 217, 217, 1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+}
+
+.v64_207 {
+  width: 863px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 36px;
+  left: 288px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: center;
+}
+
+.v64_227 {
+  width: 333px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 220px;
+  left: 193px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 35px;
+  opacity: 1;
+  text-align: center;
+}
+
+.v64_228 {
+  width: 333px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 220px;
+  left: 908px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 35px;
+  opacity: 1;
+  text-align: center;
+}
+
+.v64_229 {
+  width: 282px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 529px;
+  left: 225px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 35px;
+  opacity: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.v64_230 {
+  width: 281px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 529px;
+  left: 932px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 35px;
+  opacity: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 1s infinite;
+}
+
+.fill-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: transparent;
+  transition: height 5s ease;
+  z-index: 9999;
+}
+
+.eating {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@keyframes moveUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes disappear {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

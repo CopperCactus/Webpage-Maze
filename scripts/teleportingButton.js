@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
             teleportButton.style.top = Math.random() * (window.innerHeight - teleportButton.offsetHeight) + "px";
             clickerCounter++;
         } else {
+            pressedMessage.innerHTML = "";
+            messageTimer = -1000;
             window.location.href = "relaxingVideo.html";
         }
     });
@@ -21,12 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(function () {
         timer++;
         messageTimer++;
-        if(messageTimer > 10){
+        if(messageTimer > 5){
             pressedMessage.innerHTML = "";
             messageTimer = -1000;
         }
-        if(timer == 60)
-            window.location.href = "relaxingVideo.html";
+        if(timer >= 60)
+            window.location.href = "passedOut.html";
         if (clickerCounter < 5 || (timer % 5) == 0) {
             teleportButton.style.left = Math.random() * (window.innerWidth - teleportButton.offsetWidth) + "px";
             teleportButton.style.top = Math.random() * (window.innerHeight - teleportButton.offsetHeight) + "px";
