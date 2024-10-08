@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(function () {
         timer++;
         messageTimer++;
-        if(messageTimer > 5){
+        if(messageTimer > 3){
             pressedMessage.innerHTML = "";
             messageTimer = -1000;
         }
         if(timer >= 60)
-            window.location.href = "passedOut.html";
+            window.location.href = "untimelyEnd.html";
         if (clickerCounter < 5 || (timer % 5) == 0) {
             teleportButton.style.left = Math.random() * (window.innerWidth - teleportButton.offsetWidth) + "px";
             teleportButton.style.top = Math.random() * (window.innerHeight - teleportButton.offsetHeight) + "px";
@@ -49,10 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
             case(6):
                 return "Relax!";
             case(7):
-                return "I don't know who will see this, but you have to get out. got off this site, or it'll get you. I've barely stayed out of its reach for this long but I don't know how much more I can tell, just remeber that you can't trus-";
             case(8):
+                return "Only ${clicksLeft} more times!";
             case(9):
-                return "Only ${clicksLeft} to go!";
+                return "I don't know who will see this, but you have to get out. Get off this site, or it'll get you. I've barely stayed out of its reach for this long but I don't know how much more I can tell, just remeber that you can't trus-";
         }
         return "Huh?";
     };
