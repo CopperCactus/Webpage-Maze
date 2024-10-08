@@ -9,6 +9,16 @@ body {
   background-color: black;
 }
 
+
+#endingText{
+  text-align: center;
+}
+
+#endingTitle{
+  text-align: center;
+  font-size: 5em;
+}
+
 .v57_18 {
   width: 100%;
   height: 1024px;
