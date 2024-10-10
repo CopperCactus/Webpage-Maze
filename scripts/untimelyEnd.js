@@ -1,32 +1,17 @@
-function heartbeat() {
-    var elements = document.querySelectorAll('*');
-    elements.forEach(function (element) {
-        element.classList.toggle('heartbeat');
-    });
-}
-
-function drowning() {
-    var fillScreen = document.createElement('div');
-    fillScreen.classList.add('fill-screen');
-    document.body.appendChild(fillScreen);
-
-    setTimeout(function () {
-        fillScreen.style.height = '100vh';
-        fillScreen.style.backgroundColor = 'skyblue';
-    }, 100);
-    setTimeout(function () {
-        window.location.href = "drownedEnding.html";
-    }, 6000);
-}
-
-function eat() {
-    var eatingSound = document.getElementById("eating-sound");
-    eatingSound.play();
-
-    var food = document.querySelector(".eating");
-    food.style.animation = "moveUpDown 1s ease-in-out infinite, disappear 2s forwards";
-
-    food.addEventListener("animationend", function() {
-        food.remove();
-    });
-}
+document.addEventListener("DOMContentLoaded", function () {
+    let timer = 0;
+    setTimeout(function() {
+        //Play car pull-up sound
+        var carSound = document.getElementById("car-pulling-up-sound");
+        carSound.play();
+        setTimeout(() => {
+            //Play defibrillator sound
+            var defibSound = document.getElementById("defibrillator-sound");
+            defibSound.play();
+        setTimeout(function() {
+            //TODO: Revival
+            window.location.href = "revivalChoice.html";
+        }, 15000)
+        }, 44000);
+    }, 5000)
+});

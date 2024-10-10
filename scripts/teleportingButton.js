@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
             pressedMessage.innerHTML = "";
             messageTimer = -1000;
         }
-        if(timer >= 60)
+        if(timer >= 15)
             window.location.href = "untimelyEnd.html";
         if (clickerCounter < 5 || (timer % 5) == 0) {
             teleportButton.style.left = Math.random() * (window.innerWidth - teleportButton.offsetWidth) + "px";
