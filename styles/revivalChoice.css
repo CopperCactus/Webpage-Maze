@@ -3,13 +3,14 @@ body {
     padding: 0;
     overflow: hidden;
 }
-  
-.pill-container {
+
+.choice-container {
     display: flex;
     height: 100vh;
 }
-  
-.red-pill, .blue-pill {
+
+.live,
+.die {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -18,13 +19,13 @@ body {
     color: white;
     padding: 20px;
 }
-  
-.red-pill {
-    background-color: red;
-}
-  
-.blue-pill {
+
+.live {
     background-color: blue;
+}
+
+.die {
+    background-color: red;
 }
 
 .header {
@@ -32,15 +33,17 @@ body {
     background-color: rgb(255, 126, 255);
 }
 
-.red-button, .blue-button {
-    background-color: rgba(0, 0, 0, 0.3); 
+.live-button,
+.die-button {
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .red-button:hover, .blue-button:hover {
+}
+
+.live-button:hover,
+.die-button:hover {
     background-color: rgba(0, 0, 0, 0.6);
-  }
+}

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function() {
                 //TODO: Revival
                 window.location.href = "revivalChoice.html";
-            }, 16000);
+            }, 20000);
         }, 44000);
     }, 5000)
 });
