@@ -10,11 +10,27 @@ body {
 }
 
 
-#endingText{
+#endingTitle{
+  font-size: 5em;
+}
+
+.return-button{
+  background-color: #800000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+p{
   text-align: center;
 }
 
-#endingTitle{
-  text-align: center;
-  font-size: 5em;
+a{
+  
 }
