@@ -1,7 +1,12 @@
+:root{
+    --blacksmoke: rgb(10, 10, 10);
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: black;
 }
 
 .choice-container {
@@ -11,39 +16,48 @@ body {
 
 .live,
 .die {
+    text-decoration: none;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .live {
-    background-color: blue;
+    background-color: whitesmoke;
+    color: whitesmoke;
+}
+
+.live:hover{
+    color: var(--blacksmoke);
 }
 
 .die {
-    background-color: red;
+    background-color: var(--blacksmoke);
+    color: var(--blacksmoke);
+}
+
+.die:hover{
+    color: whitesmoke;
 }
 
 .header {
     text-align: center;
-    background-color: rgb(255, 126, 255);
+    color: rgb(128, 128, 128);
 }
 
-.live-button,
-.die-button {
-    background-color: rgba(0, 0, 0, 0.3);
+#O{
+    font-size: 3em;
+    display: flex;
+    align-self: flex-end;
+    color: black;
+}
+
+#R{
+    font-size: 3em;
+    display: flex;
+    align-self: flex-start;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.live-button:hover,
-.die-button:hover {
-    background-color: rgba(0, 0, 0, 0.6);
 }
